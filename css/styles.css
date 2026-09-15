@@ -83,7 +83,8 @@ h3{
     font-size: 2rem;
     color: var(--blanco);
     text-decoration: none;
-    margin: 0 2rem;
+    
+    margin-right: 2rem;
 }
 .header__button{
    background-color: var(--naranja);
@@ -154,138 +155,54 @@ h3{
     margin-right: 2rem;
     margin-left: 2rem;
 }
-/*formulario design**************************************************************************************************************************************/
+/*acerca de*******************************************************************************************************************************************/
+.acerca_de h1{
+    color: var(--blue);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 3rem;
+}
 
+/* formulario*****************************************************************************************************************************************/
 .formulario__container fieldset{
     border: none;
     font-size: 3rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     color: var(--blue);
     font-weight: 700
 }
-.formulario__donacion{
-    background-color: var(--blanco);
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    appearance: none;
-}
-.formulario__tipo{
-    background-color: var(--gris);
-    font-size: 2rem;
-    border-radius: 2rem 2rem 0 0;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-}
-.formulario__dot{
-    appearance: none;
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-.punto {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-color: transparent;
-    border: .2rem solid var(--blanco);
-    margin-right: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.opcion input[type="radio"]:checked + .punto {
-    background-color: var(--naranja);
-}
-.formulario__option--1,
-.formulario__option--2,
-.formulario__option--3,
-.formulario__option{
-    flex-direction: row;
-    background-color: var(--naranja);
-    color: var(--blanco);
-    font-weight: 700;
-    font-size: 2rem;
-    border: none;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    margin-left: 3rem;
-    cursor: pointer;
-}
-.formulario__option--1:hover,
-.formulario__option--2:hover,
-.formulario__option--3:hover,
-.formulario__option:hover,
-.formulario__option.is-selected{
-    background-color: var(--blue);
-    transform: translateY(-.2rem);
-}
-.formulario__option:disabled{
-    cursor: not-allowed;
-    opacity: .5;
-}
-.formulario__option:disabled:hover{
-    background-color: var(--naranja);
-    transform: none;
-}
-.formulario__mensaje{
-    color: var(--blue);
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0;
-    text-align: right;
-    flex: 1;
-}
-@media (max-width: 430px) {
-    .formulario__tipo{
-        display: flex;
-        flex-direction: column;
-    }
-    .formulario__donacion{
-        display: grid;
-        grid-template-columns: repeat(3, 10rem);    
-    }
-    .formulario__option--1,
-    .formulario__option--2,
-    .formulario__option--3,
-    .formulario__option{
-     margin: 1rem;
-}
-   .formulario__option{
-       font-size: 1.5rem;
-       padding: 1.4rem 4.5rem;
-   }
+.formulario__container legend{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
 }
 .formulario__button{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
+    width: min(100%, 45rem);
+    margin: 0 auto;
     padding: 2rem;
     background-color: var(--gris);
     border-radius: 0 0 2rem 2rem;
 }
-.formulario__button input{
+.formulario__button button{
     flex-shrink: 0;
     background-color: var(--naranja);
     border: none;
-    padding: .5rem 2rem .5rem 2rem;
+    padding: .5rem 2rem;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--blanco);
     border-radius: 1rem;
     cursor: pointer;
 }
-.formulario__button input:not(:disabled):hover{
+.formulario__button button:hover{
     background-color: var(--blue);
     transform: translateY(-.2rem);
-}
-.formulario__button input:disabled{
-    cursor: not-allowed;
-    opacity: .5;
 }
 .sinpe-modal[hidden]{
     display: none;
@@ -308,7 +225,13 @@ h3{
     border-radius: 1rem;
     color: var(--negro);
 }
+.sinpe-modal__contenido p{
+    display: flex;
+    justify-content: center;
+}
 .sinpe-modal__contenido h2{
+    display: flex;
+    justify-content: center;
     margin-top: 0;
     color: var(--blue);
     font-size: 2.5rem;
@@ -331,66 +254,9 @@ h3{
     font-weight: 700;
     text-align: center;
 }
-.sinpe-modal__metodos{
-    display: flex;
-    gap: 1.5rem;
-    margin: 1.5rem 0;
-    padding: 1rem;
-    border: .1rem solid var(--gris);
-    border-radius: .5rem;
-}
-.sinpe-modal__metodos legend{
-    padding: 0 .5rem;
-    color: var(--blue);
-    font-weight: 700;
-}
-.sinpe-modal__metodos label{
-    display: inline-flex;
-    align-items: center;
-    gap: .5rem;
-    margin: 0;
-    font-weight: 700;
-    cursor: pointer;
-}
-.sinpe-modal__metodos input{
-    width: auto;
-    margin: 0;
-    accent-color: var(--naranja);
-}
 .sinpe-modal__titular{
     font-weight: 700;
     text-align: center;
-}
-.sinpe-modal__contenido label{
-    display: block;
-    margin-top: 2rem;
-    font-weight: 700;
-}
-.sinpe-modal__contenido input{
-    width: 100%;
-    margin: .5rem 0 1.5rem;
-    padding: 1rem;
-    border: .1rem solid var(--gris);
-    border-radius: .5rem;
-    font-size: 1.6rem;
-}
-.sinpe-modal__confirmar{
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    border-radius: 1rem;
-    background-color: var(--naranja);
-    color: var(--blanco);
-    font-size: 1.7rem;
-    font-weight: 700;
-    cursor: pointer;
-}
-.sinpe-modal__confirmar:hover{
-    background-color: var(--blue);
-}
-.sinpe-modal__mensaje{
-    color: var(--blue);
-    font-weight: 700;
 }
 
 /*historias design**********************************************************************************************************/
