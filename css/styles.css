@@ -5,8 +5,9 @@
     --borde: #afabab;
     --background: #FDF7EA;
     --rojo: #ca300a;
-    --negro: #000000;
+    --negro: #2e2525;
     --gris: #666262;
+    --beige: rgb(230, 211, 173);
     /*fuentes***************************************/
     --fuente-principal: 'Arial', Helvetica, sans-serif;
     --ballo: 'Baloo 2', cursive;
@@ -17,7 +18,11 @@ body {
   font-family: var(--ballo), Arial, sans-serif;
   background-color: var(--background);
 }
-/*header**************************************************************/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 .header {
     display: flex;
     align-items: center;
@@ -26,6 +31,10 @@ body {
     border-bottom: 1px solid var(--borde);
     padding: 5px 20px;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--background);
 }
 .header_logo {
     display: flex;
@@ -49,13 +58,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 1rem;
+    gap: 0.5rem;
     flex: 1 1 320px;
     flex-wrap: wrap;
 }
 .header_menu a{
     font-family: var(--nunito);
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-decoration: none;
     margin-left: 0;
     color: var(--gris);
@@ -144,4 +153,253 @@ body {
         min-width: 7rem;
     }
 }
-/*header**************************************************************/
+/*main**************************************************************/
+.inicio_container{
+    display: grid;
+    grid-template-columns: 1.1fr 1.5fr;
+    align-items: center;
+    padding: 2rem 5vw;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.inicio{
+    margin-left: 4rem;
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+.inicio_img_container{
+    grid-column: 2 / 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+}
+.inicio_img{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    border-radius: 2rem;
+}
+.inicio_text span{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--beige);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 2rem;
+}
+.inicio_titulo{
+    color: var(--negro);
+    margin-top: -0.5rem;
+    font-size: 4rem;
+}
+.destacado{
+    color: var(--rojo);
+}
+.inicio_parrafo{
+    font-family: var(--nunito);
+    color: var(--gris);
+    font-size: 1.2rem;
+    margin-top: -2rem;
+    margin-right: 3rem;
+}
+.inicio_botones{
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.inicio_donar{
+    color: var(--base);
+    font-family: var(--ballo);
+    font-weight: 500;
+    font-size: 22px;
+    padding: 1.2rem;
+    background-color: var(--rojo);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.inicio_donar:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+.inicio_fiestas{
+    color: var(--negro);
+    font-family: var(--ballo);
+    font-weight: 500;
+    font-size: 22px;
+    padding: 1.2rem;
+    background-color: var(--base);
+    border-color: var(--borde);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.inicio_fiestas:hover{
+    border-color: var(--gris);
+}
+
+/*contador para navidad**************************************************************/
+.inicio_tiempo {
+    margin-top: 2.5rem;
+}
+
+.inicio_tiempo_texto {
+    margin: 0 0 1rem;
+    font-family: var(--ballo);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gris);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.inicio_tiempo_reloj {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.inicio_tiempo_caja {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(46, 37, 37, 0.9);
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--negro);
+    box-sizing: border-box;
+    border-color: var(--gris);
+}
+
+.inicio_tiempo_numero {
+    display: block;
+    font-family: var(--ballo);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.inicio_tiempo_label {
+    display: block;
+    font-family: var(--ballo);
+    color: var(--gris);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-top: 0.2rem;
+}
+/***************************************************************/
+@media (max-width: 980px) {
+    .inicio_container {
+        grid-template-columns: 1fr;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+    }
+
+    .inicio,
+    .inicio_img_container {
+        grid-column: auto;
+        grid-row: auto;
+        margin-right: 0;
+    }
+
+    .inicio {
+        order: 1;
+    }
+
+    .inicio_img_container {
+        order: 2;
+        width: 100%;
+    }
+
+    .inicio_img {
+        max-width: 100%;
+    }
+
+    .inicio_parrafo {
+        margin-right: 0;
+    }
+
+    .inicio_botones {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .inicio_container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1rem 1rem 2rem;
+    }
+
+    .inicio_text span {
+        font-size: 0.9rem;
+    }
+
+    .inicio_titulo {
+        font-size: 2.6rem;
+        line-height: 1;
+    }
+
+    .inicio_parrafo {
+        font-size: 1rem;
+    }
+
+    .inicio_botones {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 1rem;
+    }
+
+    .inicio_donar,
+    .inicio_fiestas {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+/*meta**************************************************************/
+.meta_container{
+    display: grid;
+    grid-template-columns: 1.1fr 1.5fr;
+    align-items: center;
+    border-radius: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    background-color: var(--base);
+    border-color: var(--negro);
+}
+.meta_titulo,
+.meta_parrafo{
+    grid-column: 1;
+    text-align: left;
+    margin-left: 2rem;
+}
+.meta_titulo{
+    color: var(--negro);
+    font-weight: 800;
+}
+.meta_parrafo{
+    font-family: var(--nunito);
+    color: var(--gris);
+}
+/*footer**************************************************************/
+.footer{
+    display: flex;
+}
+.footer_izquierda{
+
+}
+.footer_img{
+    height: 5rem;
+    width: 5rem;
+}
+.footer_text{
+ text-align: center;
+}

@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mar's Dream</title>
+    <title>ALDIVAS FOUNDATION</title>
     <link rel="icon" type="image/png" href="iconos/mars_dream.png">
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
@@ -25,17 +25,54 @@
         </div>
         <button class="header_boton">Donar</button>
     </header>
-    <main class="inicio-container">
+    <main class="inicio_container">
         <div class="inicio">
-            <h2 class="inicio_text">Campaña de fin de año</h2>
-            <h1 class="inicio_titulo">Una Navidad llena de sonrisas para quien más la necesita.</h1>
+            <h2 class="inicio_text">
+                <span>Campaña de fin de año</span>
+            </h2>
+            <h1 class="inicio_titulo">Una Navidad llena de <span class="destacado"> sonrisas</span> para quien más la necesita.</h1>
             <p class="inicio_parrafo">Cada diciembre organizamos fiestas para niños de escasos recursos: juguetes, ropa nueva y una mesa llena de comida. Con tu donación, ningún niño queda fuera de la fiesta.</p>
-            <button class="inicio_boton-1">Donar</button> 
-            <button class="inicio_boton-2">Donar</button>
+            <div class="inicio_botones">
+                <button class="inicio_donar">Quiero donar</button>
+                <button class="inicio_fiestas">Ver fiestas anteriores</button>
+            </div>
+            <div class="inicio_tiempo">
+                <p class="inicio_tiempo_texto">FALTAN PARA LA PRÓXIMA FIESTA</p>
+                <div class="inicio_tiempo_reloj">
+                    <div class="inicio_tiempo_caja">
+                        <span class="inicio_tiempo_numero" id="inicio_dias">00</span>
+                        <span class="inicio_tiempo_label">DÍAS</span>
+                    </div>
+                    <div class="inicio_tiempo_caja">
+                        <span class="inicio_tiempo_numero" id="inicio_horas">00</span>
+                        <span class="inicio_tiempo_label">HORAS</span>
+                    </div>
+                    <div class="inicio_tiempo_caja">
+                        <span class="inicio_tiempo_numero" id="inicio_minutos">00</span>
+                        <span class="inicio_tiempo_label">MIN</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="inicio_img_container">
             <img class="inicio_img" src="img/1.jpeg" alt="inicio_ninos">
         </div>
     </main>
+    <div class="meta_container">
+        <h1 class="meta_titulo">La meta de esta temporada</h1>
+        <p class="meta_parrafo">Con lo recaudado compramos los juguetes, la ropa y la comida de la fiesta. Cada aporte, grande o pequeño, acerca la meta.</p>
+        <div class="meta_logro">
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer_izquierda">
+            <img class="footer_img" src="img/ALDIVAS FOUNDATION_logo.png" alt="footer_logo">
+            <h4 class="footer_titulo">ALDIVAS FOUNDATION</h4>
+        </div>
+        <p class="footer_text">Hecho con cariño para las fiestas navideñas · Montos y cifras de ejemplo</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
