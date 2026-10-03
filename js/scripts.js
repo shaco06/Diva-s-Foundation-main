@@ -1,3 +1,4 @@
+/* esto es la funcion del reloj hasta la fiesta */
 const fechaObjetivo = new Date('2026-12-25T18:00:00');
 
 function actualizarTiempo() {
@@ -22,3 +23,10 @@ function actualizarTiempo() {
 
 actualizarTiempo();
 setInterval(actualizarTiempo, 1000 * 60);
+
+/* esto impide letras en el input de donación */
+const donacionInput = document.querySelector(".donacion_input");
+
+donacionInput.addEventListener("input", () => {
+    donacionInput.value = donacionInput.value.replace(/\D/g, "");
+});
