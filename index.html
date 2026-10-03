@@ -19,13 +19,13 @@
                 <h3 class=" header_logo-text">ALDIVAS FOUNDATION</h3>
             </a>
         <div class="header_menu">
-            <a class="menu_donar" href="#">Donar</a>
+            <a class="menu_donar" href="#donacion">Donar</a>
             <a class="menu_cause" href="#">La causa</a>
             <a class="menu_fiestas" href="#">Fiestas pasadas</a>
         </div>
-        <button class="header_boton">Donar</button>
+        <a class="header_boton" href="#donacion">Donar</a>
     </header>
-    <main class="inicio_container">
+    <section id="inicio" class="inicio_container">
         <div class="inicio">
             <h2 class="inicio_text">
                 <span>Campaña de fin de año</span>
@@ -33,7 +33,7 @@
             <h1 class="inicio_titulo">Una Navidad llena de <span class="destacado"> sonrisas</span> para quien más la necesita.</h1>
             <p class="inicio_parrafo">Cada diciembre organizamos fiestas para niños de escasos recursos: juguetes, ropa nueva y una mesa llena de comida. Con tu donación, ningún niño queda fuera de la fiesta.</p>
             <div class="inicio_botones">
-                <button class="inicio_donar">Quiero donar</button>
+                <a class="inicio_donar" href="#donacion">Quiero donar</a>
                 <button class="inicio_fiestas">Ver fiestas anteriores</button>
             </div>
             <div class="inicio_tiempo">
@@ -57,14 +57,28 @@
         <div class="inicio_img_container">
             <img class="inicio_img" src="img/1.jpeg" alt="inicio_ninos">
         </div>
-    </main>
-    <div class="meta_container">
-        <h1 class="meta_titulo">La meta de esta temporada</h1>
+    </section>
+    <section id="meta_container">
+        <h1 class="meta_titulo">Nuestra meta</h1>
         <p class="meta_parrafo">Con lo recaudado compramos los juguetes, la ropa y la comida de la fiesta. Cada aporte, grande o pequeño, acerca la meta.</p>
         <div class="meta_logro">
 
         </div>
-    </div>
+    </section>
+    <section id="donacion" class="donacion">
+        <div class="donacion_texto">
+            <h1 class="donacion_titulo">Elige <span class="donacion_destacado">cuánto</span> <br> quieres donar</h1>
+            <p class="donacion_parrafo">Cada monto se convierte en algo concreto para la fiesta. <br> Elige uno o escríbenos para donar otro importe <br> — todo suma.</p>
+        </div>
+        <div class="donacion_cantidad">
+            <button class="donacion_boton">₡2000</button>
+            <button class="donacion_boton">₡5000</button>
+            <button class="donacion_boton">₡10.000</button>
+            <button class="donacion_boton">₡15.000</button>
+            <button class="donacion_boton-donar">Donar</button>
+            <p class="donacion_parra">...</p>
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer_izquierda">
             <img class="footer_img" src="img/ALDIVAS FOUNDATION_logo.png" alt="footer_logo">

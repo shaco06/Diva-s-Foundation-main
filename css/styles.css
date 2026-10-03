@@ -3,11 +3,13 @@
     /*paleta de colores****************************/
     --base: #f5f5f5;
     --borde: #afabab;
-    --background: #FDF7EA;
+    --blue: #1d4ff1;
     --rojo: #ca300a;
     --negro: #2e2525;
     --gris: #666262;
     --beige: rgb(230, 211, 173);
+    --naranja: #eb993c;
+    --naranja2: #d6800f;
     /*fuentes***************************************/
     --fuente-principal: 'Arial', Helvetica, sans-serif;
     --ballo: 'Baloo 2', cursive;
@@ -16,7 +18,10 @@
 body {
   margin: 0;
   font-family: var(--ballo), Arial, sans-serif;
-  background-color: var(--background);
+  background-color: var(--base);
+}
+html {
+        scroll-behavior: smooth;
 }
 header{
     position: sticky;
@@ -34,7 +39,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: var(--background);
+    background: var(--blue);
 }
 .header_logo {
     display: flex;
@@ -50,7 +55,7 @@ header{
 .header_logo-text{
     font-size: 1.2rem;
     padding-left: 1rem;
-    color: var(--negro);
+    color: var(--base);
     font-family: var(--ballo);
     font-weight: 600;
 }
@@ -67,23 +72,27 @@ header{
     font-size: 1.1rem;
     text-decoration: none;
     margin-left: 0;
-    color: var(--gris);
+    color: var(--base);
     cursor: pointer;
 }
 .header_menu a:hover{
-    color: var(--rojo);
+    color: var(--naranja2);
 }
 .header_boton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--ballo);
     font-weight: 700;
     height: 2.5rem;
     margin-top: 0;
     margin-right: 0;
     color: var(--base);
-    background-color: var(--rojo);
+    background-color: var(--naranja2);
     padding: 0.08rem 1.5rem;
     border: none;
     border-radius: 1.2rem;
+    text-decoration: none;
     cursor: pointer;
     box-shadow: -1px 10px 17px -5px rgba(242,2,2,0.38);
     -webkit-box-shadow: -1px 10px 17px -5px rgba(242,2,2,0.38);
@@ -195,7 +204,7 @@ header{
     font-size: 4rem;
 }
 .destacado{
-    color: var(--rojo);
+    color: var(--naranja);
 }
 .inicio_parrafo{
     font-family: var(--nunito);
@@ -211,14 +220,16 @@ header{
     flex-wrap: wrap;
 }
 .inicio_donar{
+    display: inline-block;
     color: var(--base);
     font-family: var(--ballo);
     font-weight: 500;
     font-size: 22px;
     padding: 1.2rem;
-    background-color: var(--rojo);
+    background-color: var(--naranja2);
     border: none;
     border-radius: 2rem;
+    text-decoration: none;
     cursor: pointer;
 }
 .inicio_donar:hover{
@@ -389,6 +400,75 @@ header{
     font-family: var(--nunito);
     color: var(--gris);
 }
+/*donacion**************************************************************/
+.donacion{
+    background-color: var(--blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 3rem 10rem 1rem 10rem;
+    margin-top: 2rem;
+}
+.donacion_texto{
+    margin-left: 10rem;
+}
+.donacion_titulo{
+    font-family: var(--ballo);
+    color: var(--base);
+    font-size: 3rem;
+    padding: 0%;
+    margin:0%
+}
+/*cambia el color de una palabra destacada del titulo de donar*/
+.donacion_destacado{
+    color: var(--naranja);
+}
+.donacion_parrafo{
+    font-family: var(--ballo);
+    color: var(--base);
+    font-size: 15px;
+    padding: 0%;
+    margin-top: 20px;
+}
+/*donacion_cantidades**************************************************************/
+.donacion_cantidad{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-right: 10rem;
+}
+.donacion_boton{
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+}
+.donacion_boton-donar{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-color: var(--naranja2);
+}
+.donacion_boton{
+    font-family: var(--ballo);
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--negro);
+}
+.donacion_boton:hover{
+    background-color: var(--naranja2);
+    color: var(--base);
+}
+.donacion_boton-donar{
+    font-family: var(--ballo);
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--base);
+}
+.donacion_boton-donar:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
 /*footer**************************************************************/
 .footer{
     display: flex;
