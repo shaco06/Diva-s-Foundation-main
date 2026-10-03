@@ -439,8 +439,47 @@ header{
     border-radius: 2rem;
     padding: 1rem;
 }
+/*enganche**************************************************************/
+.enganche{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background: #77CBDA;
+    background: radial-gradient(circle, rgba(119, 203, 218, 1) 56%, rgba(255, 255, 255, 1) 100%);
+    padding: 5rem;
+}
+.enganche_titulo{
+    font-family: var(--ballo);
+    font-size: 3rem;
+    color: var(--base);
+    padding: 0%;
+    margin:0%
+}
+.enganche_parrafo{
+    font-family: var(--nunito);
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--base);
+}
+.enganche_boton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: var(--ballo);
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--naranja2);
+    background-color: var(--base);
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+}
+.enganche_boton svg{
+    height: 1.8rem;
+    width: 1.8rem;
+}
 /*footer**************************************************************/
-
 .footer{
     display: flex;
 }
