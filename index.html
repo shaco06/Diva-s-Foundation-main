@@ -1,234 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/Fundación Diva's_ BG_logo.png">
-    <title>Fundación Diva’s</title>
+    <title>ALDIVAS FOUNDATION</title>
+    <link rel="icon" type="image/png" href="iconos/mars_dream.png">
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
-
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 <body>
-        <header class="header">
-            <div class="header__container">
-                <a class="header__logo" href="./index.html">
-                   <img src="img/Fundación Diva's_logo.png" alt="logo">
-                </a>
-                <nav class="header__nav">
-                    <a class="header__link" href="index.html">Inicio</a>
-                    <a class="header__link" href="#">Nuestra Causa</a>
-                    <a class="header__button" href="#formulario-donacion">Donar ahora</a>
-                </nav>
-            </div>
-        </header>
-        <section class="titulo__bg">
-                <div class="titulo__contenido">
-                    <h1 class="titulo__text">Ayuda a Niños de Escasos Recursos</h1>
-                    <h3 class="titulo__text">Tu donación puede cambiar vidas.</h3>
-                    <a class="titulo__button" href="#formulario-donacion">Donar ahora</a>
-                </div>
-        </section>
-        <section class="subtitulo">
-            <p class="subtitulo__text">
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="52"
-                height="52"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#2a51d3"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                >
-                <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" />
-                <path d="M15 19l2 2l4 -4" />
-                </svg>
-                Donacion Segura
-            </p>
-                <p class="subtitulo__text">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="52"
-                    height="52"
-                    viewBox="0 0 24 24"
-                    fill="#ff2d55"
-                    stroke="#ff2d55"
-                    >
-                    <path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" />
-                    </svg>
-                    Impacto Real
-                </p>
-              <p class="subtitulo__text">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52px" height="52px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="#394240" d="M60,32c0-2.211-1.789-4-4-4H44V4c0-2.211-1.789-4-4-4H24c-2.211,0-4,1.789-4,4v12H8c-2.211,0-4,1.789-4,4 v44h56V32z M20,56h-8V24h8V56z M36,32v24h-8V20V8h8V32z M52,56h-8V36h8V56z"></path> <rect x="12" y="24" fill="#80ff80" width="8" height="32"></rect> <rect x="28" y="8" fill="#3797c6" width="8" height="48"></rect> <rect x="44" y="36" fill="#ff4f4f" width="8" height="20"></rect> </g> </g></svg>
-                Transferencia Total
-              </p>
-        </section>
-    <main>
-        <div class="formulario__grid">
-            <section class="formulario">
-                <form class="formulario__container" id="formulario-donacion">
-                    <fieldset>
-                        <legend>
-                            Como Puedes Ayudar?
-                        </legend>
-                            <div class="formulario__tipo">
-                                <label class="opcion">
-                                    <input class="formulario__dot" type="radio" name="tipoDonacion" value="unica" required>
-                                    <span class="punto"></span>
-                                    <span class="texto">Donación Única</span>
-                                </label>
-                                <label class="opcion">
-                                    <input class="formulario__dot" type="radio" name="tipoDonacion" value="mensual">
-                                    <span class="punto"></span>
-                                    <span class="texto">Donación Mensual</span>
-                                </label>
-                            </div>
-                        <div class="formulario__donacion">
-                            <div>
-                                <button class="formulario__option--1 sombra" type="button" data-amount="2500" disabled>₡2500</button>
-                            </div>
-                                <div>
-                                <button class="formulario__option--2 sombra" type="button" data-amount="5000" disabled>₡5000</button>
-                            </div>
-                                <div>
-                                <button class="formulario__option--3 sombra" type="button" data-amount="10000" disabled>₡10000</button>
-                            </div>
-                            <div>
-                                <input id="otro-monto" class="formulario__option sombra" type="number" placeholder="Otro ₡" min="1" step="1" inputmode="numeric" aria-label="Otro monto de donación" disabled>
-                            </div>
-                        </div>    
-                        <div class="formulario__button">
-                            <input id="continuar-donacion" type="submit" value="Continuar" disabled>
-                            <p class="formulario__mensaje" id="mensaje-donacion" role="status" aria-live="polite"></p>
-                        </div>
-                    </fieldset>
-                </form>
-            </section>
-            <section class="historias">
-                <legend class="historias__title">
-                    Historias de Esperanza
-                </legend>
-                <img class="historias__img" src="img/2.jpeg" alt="ninos">
-                <div class="historias__bg">
-                    <h1 class="historias__text">Conoce a Sofia</h1>
-                    <input class="historias__button sombra" type="submit" value="ver su historia">
-                </div>
-            </section>
+    <header class="header">
+            <a class="header_logo"href="index.html">
+                <img class="header_logo-img" src="img/ALDIVAS FOUNDATION_logo.png" alt="Logo de la fundación">
+                <h3 class=" header_logo-text">ALDIVAS FOUNDATION</h3>
+            </a>
+        <div class="header_menu">
+            <a class="menu_donar" href="#donacion">Donar</a>
+            <a class="menu_cause" href="#">La causa</a>
+            <a class="menu_fiestas" href="#">Fiestas pasadas</a>
         </div>
-        <div class="section__grid">
-            <section class="impacto">
-                <h1 class="impacto__title">Nuestro Impacto</h1>
-                <div class="impacto__section">
-                    <div class="impacto__option">
-                        <h2>Niños Ayudados</h2>
-                     </div>
-                    <div class="impacto__option">
-                        <h2>Proyectos Comunitarios</h2>
+        <a class="header_boton" href="#donacion">Donar</a>
+    </header>
+    <section id="inicio" class="inicio_container">
+        <div class="inicio">
+            <h2 class="inicio_text">
+                <span>Campaña de fin de año</span>
+            </h2>
+            <h1 class="inicio_titulo">Una Navidad llena de <span class="destacado"> sonrisas</span> para quien más la necesita.</h1>
+            <p class="inicio_parrafo">Cada diciembre organizamos fiestas para niños de escasos recursos: juguetes, ropa nueva y una mesa llena de comida. Con tu donación, ningún niño queda fuera de la fiesta.</p>
+            <div class="inicio_botones">
+                <a class="inicio_donar" href="#donacion">Quiero donar</a>
+                <button class="inicio_fiestas">Ver fiestas anteriores</button>
+            </div>
+            <div class="inicio_tiempo">
+                <p class="inicio_tiempo_texto">FALTAN PARA LA PRÓXIMA FIESTA</p>
+                <div class="inicio_tiempo_reloj">
+                    <div class="inicio_tiempo_caja">
+                        <span class="inicio_tiempo_numero" id="inicio_dias">00</span>
+                        <span class="inicio_tiempo_label">DÍAS</span>
+                    </div>
+                    <div class="inicio_tiempo_caja">
+                        <span class="inicio_tiempo_numero" id="inicio_horas">00</span>
+                        <span class="inicio_tiempo_label">HORAS</span>
+                    </div>
+                    <div class="inicio_tiempo_caja">
+                        <span class="inicio_tiempo_numero" id="inicio_minutos">00</span>
+                        <span class="inicio_tiempo_label">MIN</span>
                     </div>
                 </div>
-            </section>
-            <section class="comparte">
-                <h1 class="comparte__title">Comparte:</h1>
-                <a class="comparte__link" href="#"> <img src="img/whatsapp_icon.png" alt="whastapp__icon"></a>
-                <a class="comparte__link" href="#"> <img src="img/facebook_icon.png" alt="facebook__icon"></a>
-                <a class="comparte__link" href="#"> <img src="img/instagram_icon.png" alt="instagram__icon"></a>
-                <a class="comparte__link" href="#"> <img src="img/mail_icon.png" alt="mail__icon"></a>
-            </section>
+            </div>
         </div>
-    </main>
-    <div class="sinpe-modal" id="sinpe-modal" hidden>
-        <div class="sinpe-modal__contenido" role="dialog" aria-modal="true" aria-labelledby="sinpe-titulo">
-            <button class="sinpe-modal__cerrar" id="cerrar-sinpe" type="button" aria-label="Cerrar ventana">&times;</button>
-            <h2 id="sinpe-titulo">Completa tu donación</h2>
-            <fieldset class="sinpe-modal__metodos">
-                <legend>Selecciona el método de pago</legend>
-                <label>
-                    <input type="radio" name="metodoPago" value="sinpe" checked>
-                    SINPE Móvil
-                </label>
-                <label>
-                    <input type="radio" name="metodoPago" value="transferencia">
-                    Transferencia bancaria
-                </label>
-            </fieldset>
-            <p id="pago-instrucciones">Envía el monto exacto a este número:</p>
-            <p class="sinpe-modal__dato" id="sinpe-numero"></p>
-            <p class="sinpe-modal__titular" id="sinpe-titular"></p>
-            <p id="pago-comprobante-instrucciones">Después de realizar el pago, escribe el número de comprobante para registrar tu donación.</p>
-            <label for="sinpe-comprobante">Número de comprobante</label>
-            <input id="sinpe-comprobante" type="text" inputmode="numeric" autocomplete="off" placeholder="Ej. 123456789" minlength="4">
-            <button class="sinpe-modal__confirmar" id="confirmar-sinpe" type="button">Ya realicé el pago</button>
-            <p class="sinpe-modal__mensaje" id="sinpe-mensaje" role="status" aria-live="polite"></p>
+        <div class="inicio_img_container">
+            <img class="inicio_img" src="img/1.jpeg" alt="inicio_ninos">
         </div>
-    </div>
-    <script src="js/configuracion.js"></script>
-    <script src="js/donaciones.js"></script>
+    </section>
+    <section id="meta_container">
+        <h1 class="meta_titulo">Nuestra meta</h1>
+        <p class="meta_parrafo">Con lo recaudado compramos los juguetes, la ropa y la comida de la fiesta. Cada aporte, grande o pequeño, acerca la meta.</p>
+        <div class="meta_logro">
+
+        </div>
+    </section>
+    <section id="donacion" class="donacion">
+        <div class="donacion_texto">
+            <h1 class="donacion_titulo">Elige <span class="donacion_destacado">cuánto</span> <br> quieres donar</h1>
+            <p class="donacion_parrafo">Cada monto se convierte en algo concreto para la fiesta. <br> Elige uno o escríbenos para donar otro importe <br> — todo suma.</p>
+        </div>
+        <div class="donacion_cantidad">
+            <button class="donacion_boton">₡2000</button>
+            <button class="donacion_boton">₡5000</button>
+            <button class="donacion_boton">₡10.000</button>
+            <button class="donacion_boton">₡15.000</button>
+            <button class="donacion_boton-donar">Donar</button>
+            <p class="donacion_parra">...</p>
+        </div>
+    </section>
     <footer class="footer">
-        <div class="iconos">
-            <p>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="52"
-                    height="52"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#2a51d3"
-                    stroke-width="1"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    >
-                    <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" />
-                    <path d="M15 19l2 2l4 -4" />
-                </svg>
-                Donar con confianza
-            </p>
-            <svg class="iconos__master" width="62px" height="62px" viewBox="0 -11 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" 
-                stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="0.5" y="0.5" width="69" height="47" 
-                rx="5.5" fill="white" stroke="#D9D9D9"></rect> <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M35.3945 34.7619C33.0114 36.8184 29.92 38.0599 26.5421 38.0599C19.0047 38.0599 12.8945 31.8788 
-                12.8945 24.254C12.8945 16.6291 19.0047 10.448 26.5421 10.448C29.92 10.448 33.0114 11.6895 35.3945 
-                13.7461C37.7777 11.6895 40.869 10.448 44.247 10.448C51.7843 10.448 57.8945 16.6291 57.8945 24.254C57.8945 
-                31.8788 51.7843 38.0599 44.247 38.0599C40.869 38.0599 37.7777 36.8184 35.3945 34.7619Z" fill="#ED0006">
-                </path> <path fill-rule="evenodd" clip-rule="evenodd" d="M35.3945 34.7619C38.3289 32.2296 40.1896 28.4616 40.1896 
-                24.254C40.1896 20.0463 38.3289 16.2783 35.3945 13.7461C37.7777 11.6895 40.869 10.448 44.247 10.448C51.7843 10.448
-                57.8945 16.6291 57.8945 24.254C57.8945 31.8788 51.7843 38.0599 44.247 38.0599C40.869 38.0599 37.7777 36.8184 
-                35.3945 34.7619Z" fill="#F9A000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M35.3946 13.7461C38.329 
-                16.2784 40.1897 20.0463 40.1897 24.254C40.1897 28.4616 38.329 32.2295 35.3946 34.7618C32.4603 32.2295 30.5996 
-                28.4616 30.5996 24.254C30.5996 20.0463 32.4603 16.2784 35.3946 13.7461Z" fill="#FF5E00"></path> </g>
-            </svg>
-            <svg class="iconos__visa" width="62px" height="62px" viewBox="0 -9 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" 
-                stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="0.5" y="0.5" width="57" height="39" 
-                    rx="3.5" fill="white" stroke="#F3F3F3"></rect> <path d="M25.7516 27.4332H21.8901L24.3054
-                     13.4325H28.1667L25.7516 27.4332Z" fill="#15195A"></path> <path d="M39.7499 13.7748C38.9882 13.4915 
-                     37.7802 13.1787 36.2865 13.1787C32.4731 13.1787 29.7878 15.0851 29.7713 17.8106C29.7396 19.8215 
-                     31.6939 20.9384 33.1556 21.6089C34.6495 22.2941 35.1574 22.7413 35.1574 23.352C35.1422 24.29 
-                     33.9502 24.7223 32.8384 24.7223C31.2967 24.7223 30.4707 24.4994 29.2153 23.9776L28.7069 
-                     23.7539L28.1665 26.8967C29.0722 27.2835 30.7408 27.6268 32.4731 27.6419C36.5249 27.6419 39.1627 
-                     25.765 39.1939 22.8605C39.2093 21.2667 38.1774 20.0454 35.9526 19.0475C34.602 18.4069 33.7749 
-                     17.9749 33.7749 17.3195C33.7908 16.7236 34.4745 16.1133 35.9991 16.1133C37.2544 16.0834 38.1768 
-                     16.3663 38.8755 16.6494L39.2247 16.7981L39.7499 13.7748V13.7748V13.7748Z" fill="#15195A"></path> 
-                     <path fill-rule="evenodd" clip-rule="evenodd" d="M46.6618 13.4325H49.6486L52.7639 27.433H49.1885C49.1885 
-                     27.433 48.8386 25.8244 48.7278 25.3328H43.7699C43.6266 25.705 42.9595 27.433 42.9595 
-                     27.433H38.9078L44.6435 14.5941C45.0409 13.6855 45.7407 13.4325 46.6618 13.4325ZM46.4238 
-                     18.556C46.4238 18.556 45.2001 21.6689 44.8821 22.4732H48.0918C47.933 21.7733 47.2017 18.4219 
-                     47.2017 18.4219L46.9319 17.2156C46.8182 17.5262 46.6539 17.9533 46.543 18.2414C46.4679 18.4366 
-                     46.4173 18.568 46.4238 18.556Z" fill="#15195A"></path> <path fill-rule="evenodd" 
-                     clip-rule="evenodd" d="M5.1589 13.4325H11.3716C12.2138 13.462 12.8971 13.7152 13.1194
-                     14.6094L14.4696 21.0422C14.4697 21.0426 14.4699 21.043 14.47 21.0434L14.8832 22.9796L18.6649 
-                     13.4325H22.7481L16.6785 27.4184H12.5951L9.15337 15.253C7.96587 14.6021 6.6106 14.0786 5.09534 
-                     13.7154L5.1589 13.4325Z" fill="#15195A"></path> </g>
-            </svg>
+        <div class="footer_izquierda">
+            <img class="footer_img" src="img/ALDIVAS FOUNDATION_logo.png" alt="footer_logo">
+            <h4 class="footer_titulo">ALDIVAS FOUNDATION</h4>
         </div>
-        <div class="footer__">
-            <p class="footer__text">2026 Diva's Foundation.</p>
-            <p class="footer__derechos">Todos los derechos reservados Shaquille Lackwood Blanco</p>
-        </div>
+        <p class="footer_text">Hecho con cariño para las fiestas navideñas · Montos y cifras de ejemplo</p>
     </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
