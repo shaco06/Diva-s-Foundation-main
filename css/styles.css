@@ -527,3 +527,377 @@ header{
     display: flex;
     text-align: center;
 }
+/*codigo responsive**************************************************************/
+@media (max-width: 768px) {
+    .header {
+        gap: 0.5rem;
+        padding: 0.5rem 0.75rem;
+    }
+    .header_logo {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .header_logo-img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .header_logo-text {
+        padding-left: 0.5rem;
+        font-size: 1rem;
+    }
+    .header_boton {
+        height: 2.25rem;
+        padding: 0.08rem 1rem;
+    }
+    .header_menu {
+        flex: 1 0 100%;
+        order: 3;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+    .header_menu a {
+        font-size: 0.95rem;
+    }
+
+    .inicio_container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 1.5rem 1rem;
+    }
+    .inicio {
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 0;
+    }
+    .inicio_titulo {
+        margin: 0.5rem 0 1.5rem;
+        font-size: clamp(2.5rem, 10vw, 3.2rem);
+        line-height: 1.05;
+    }
+    .inicio_parrafo {
+        margin: 0;
+        font-size: 1.05rem;
+    }
+    .inicio_botones {
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+    }
+    .inicio_donar,
+    .inicio_fiestas {
+        padding: 0.8rem 1rem;
+        text-align: center;
+    }
+    .inicio_img_container {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .inicio_img {
+        max-width: 100%;
+    }
+    .inicio_tiempo_reloj {
+        gap: 0.75rem;
+    }
+
+    #meta_container {
+        grid-template-columns: 1fr;
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+    .meta_titulo,
+    .meta_parrafo {
+        margin-left: 0;
+    }
+    .meta_titulo {
+        font-size: 2.25rem;
+    }
+    .meta_parrafo {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    #donacion,
+    #fiestas_pasadas,
+    #meta_container {
+        scroll-margin-top: 7.5rem;
+    }
+    .donacion {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 2rem 1rem;
+    }
+    .donacion_texto {
+        padding-left: 0;
+    }
+    .donacion_titulo {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+    .donacion_parrafo {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .donacion_parrafo br {
+        display: none;
+    }
+    .donacion_cantidad {
+        gap: 0.75rem;
+        margin-right: 0;
+    }
+    .donacion_boton {
+        min-width: 0;
+        padding: 1.25rem 0.5rem;
+        font-size: 1.1rem;
+    }
+    .donacion_input,
+    .donacion_boton-donar {
+        min-width: 0;
+        padding: 0.9rem 1rem;
+    }
+
+    .cosas {
+        margin-top: 1.5rem;
+    }
+    .cosas_encabezado {
+        margin: 0 1rem;
+    }
+    .cosas_titulo {
+        font-size: 2.25rem;
+        line-height: 1.1;
+    }
+    .cosas_subtitulo {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .cosas_subtitulo br {
+        display: none;
+    }
+    .cosas_contenido {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 0 1rem 2rem;
+    }
+
+    .fiestas_encabezado {
+        margin: 1.5rem 1rem 0;
+    }
+    .fiestas_titulo {
+        font-size: 2.25rem;
+        line-height: 1.1;
+    }
+    .fiestas_parrafo {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .fiestas_parrafo br {
+        display: none;
+    }
+    .fiestas_contenido {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        margin: 0 1rem;
+    }
+    .fiestas_img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 13 / 8;
+        object-fit: cover;
+    }
+    .fiestas_testimonio {
+        margin: 0 1rem 1.5rem;
+        padding: 1rem;
+    }
+    .fiestas_testimonio h2 {
+        font-size: 1.25rem;
+    }
+
+    .enganche {
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+    .enganche_titulo {
+        font-size: 2.25rem;
+        line-height: 1.15;
+    }
+    .enganche_titulo br {
+        display: none;
+    }
+    .enganche_parrafo {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0 1rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+    .header_logo {
+        flex-basis: 190px;
+    }
+    .header_logo-img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .header_logo-text {
+        padding-left: 0.5rem;
+        font-size: 1rem;
+    }
+    .header_menu {
+        flex-basis: 300px;
+    }
+    .header_menu a {
+        font-size: 1rem;
+    }
+
+    .inicio_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 2rem;
+    }
+    .inicio {
+        margin-left: 0;
+    }
+    .inicio_titulo {
+        font-size: clamp(2.5rem, 5vw, 3.2rem);
+        line-height: 1.05;
+    }
+    .inicio_parrafo {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+    .inicio_botones {
+        gap: 0.75rem;
+    }
+    .inicio_donar,
+    .inicio_fiestas {
+        padding: 0.9rem;
+        font-size: 1.1rem;
+    }
+
+    #meta_container {
+        grid-template-columns: 1fr;
+        margin: 0 2rem;
+    }
+    .meta_titulo,
+    .meta_parrafo {
+        margin-left: 1rem;
+    }
+    .meta_titulo {
+        font-size: 2.5rem;
+    }
+    .meta_parrafo {
+        font-size: 1rem;
+    }
+
+    .donacion {
+        padding: 2rem;
+    }
+    .donacion_texto {
+        padding-left: 1rem;
+    }
+    .donacion_titulo {
+        font-size: 2.5rem;
+    }
+    .donacion_parrafo {
+        font-size: 1rem;
+    }
+    .donacion_parrafo br {
+        display: none;
+    }
+    .donacion_cantidad {
+        margin-right: 0;
+    }
+    .donacion_boton {
+        padding: 1.5rem 1rem;
+    }
+
+    .cosas_encabezado,
+    .cosas_contenido {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .cosas_titulo,
+    .fiestas_titulo {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+    .fiestas_encabezado,
+    .fiestas_contenido,
+    .fiestas_testimonio {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .fiestas_img {
+        width: 100%;
+        height: 14rem;
+        object-fit: cover;
+    }
+    .footer_container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1728px) {
+    .inicio_container {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: clamp(2rem, 6vw, 6rem);
+        padding-right: clamp(2rem, 6vw, 6rem);
+    }
+    .inicio {
+        margin-left: clamp(0rem, 3vw, 3rem);
+    }
+    .inicio_titulo {
+        font-size: clamp(3rem, 4.3vw, 4rem);
+    }
+    .inicio_parrafo {
+        margin-right: 0;
+    }
+
+    #meta_container {
+        margin-left: clamp(4rem, 11vw, 9rem);
+        margin-right: clamp(4rem, 11vw, 9rem);
+    }
+
+    .donacion {
+        padding-left: clamp(2rem, 7vw, 6rem);
+        padding-right: clamp(2rem, 7vw, 6rem);
+    }
+    .donacion_texto {
+        padding-left: clamp(0rem, 4vw, 4rem);
+    }
+    .donacion_cantidad {
+        margin-right: 0;
+    }
+
+    .cosas_encabezado,
+    .cosas_contenido,
+    .fiestas_encabezado,
+    .fiestas_contenido,
+    .fiestas_testimonio {
+        margin-left: clamp(2rem, 8vw, 8rem);
+        margin-right: clamp(2rem, 8vw, 8rem);
+    }
+    .fiestas_img {
+        width: 100%;
+        height: 16rem;
+        object-fit: cover;
+    }
+    .footer_container {
+        margin-left: clamp(2rem, 8vw, 8rem);
+        margin-right: clamp(2rem, 8vw, 8rem);
+    }
+}
