@@ -196,8 +196,9 @@ header{
     font-size: 22px;
     padding: 1.2rem;
     background-color: var(--base);
-    border-color: var(--borde);
+    border: 0.5px solid rgba(46, 37, 37, 0.9);
     border-radius: 2rem;
+    text-decoration: none;
     cursor: pointer;
 }
 .inicio_fiestas:hover{
@@ -269,7 +270,13 @@ header{
     margin-right: 19rem;
     background-color: var(--base);
     border-color: var(--negro);
-     border: 1px solid rgba(102, 98, 98, 0.35);
+    border: 1px solid rgba(102, 98, 98, 0.35);
+}
+/*hace un margen de 6 rems en cada seccion para que el ehader no lo tape*/
+#donacion,
+#fiestas_pasadas,
+#meta_container{
+    scroll-margin-top: 6rem;
 }
 .meta_titulo,
 .meta_parrafo{
@@ -280,10 +287,13 @@ header{
 .meta_titulo{
     color: var(--negro);
     font-weight: 800;
+    font-size: 3rem;
 }
 .meta_parrafo{
     font-family: var(--nunito);
     color: var(--gris);
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 /*donacion**************************************************************/
 .donacion{
@@ -310,8 +320,9 @@ header{
 }
 .donacion_parrafo{
     font-family: var(--ballo);
-    color: var(--base);
-    font-size: 15px;
+    color: var(--base);  
+    font-size: 1.2rem;
+    font-weight: 300;
     padding: 0%;
     margin-top: 20px;
 }
@@ -369,7 +380,7 @@ header{
     margin-left: 20rem;
 }
 .cosas_titulo{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .cosas_subtitulo{
     font-family: var(--nunito);
@@ -384,6 +395,7 @@ header{
     gap: 2rem;
     margin-left: 20rem;
     margin-right: 20rem;
+    margin-bottom: 3rem;
 }
 .cosas_caja{
     background-color: var(--base);
@@ -422,6 +434,14 @@ header{
     margin-right: 20rem;
     margin-top: 2rem;
     padding-top: 0.5rem;
+}
+.fiestas_titulo{
+    font-size: 3rem;
+}
+.fiestas_parrafo{
+    font-family: var(--nunito);
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 .fiestas_contenido{
     display: grid;
@@ -474,22 +494,36 @@ header{
     padding: 1rem;
     border-radius: 2rem;
     border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.enganche_boton:hover{
+    transform: scale(105%);
+    transition: all .1s ease-in-out;
 }
 .enganche_boton svg{
     height: 1.8rem;
     width: 1.8rem;
 }
 /*footer**************************************************************/
-.footer{
+.footer_container{
     display: flex;
+    justify-content: space-between;
+    margin-left: 20rem;
+    margin-right: 20rem;
 }
 .footer_izquierda{
-
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 .footer_img{
     height: 5rem;
     width: 5rem;
 }
 .footer_text{
- text-align: center;
+    color: var(--gris);
+    display: flex;
+    text-align: center;
 }
