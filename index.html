@@ -75,13 +75,13 @@
             <p class="donacion_parrafo">Cada monto se convierte en algo concreto para la fiesta. <br> Elige uno o escríbenos para donar otro importe <br> — todo suma.</p>
         </div>
         <div class="donacion_cantidad">
-            <button class="donacion_boton">₡5000</button>
-            <button class="donacion_boton">₡10.000</button>
-            <button class="donacion_boton">₡20.000</button>
-            <button class="donacion_boton">$100</button>
-            <input class="donacion_input" type="text" inputmode="numeric" placeholder="Otro monto">
-            <button class="donacion_boton-donar">Donar</button>
-            <p class="donacion_parra">...</p>
+            <button class="donacion_boton" type="button" aria-pressed="false">₡5000</button>
+            <button class="donacion_boton" type="button" aria-pressed="false">₡10.000</button>
+            <button class="donacion_boton" type="button" aria-pressed="false">₡20.000</button>
+            <button class="donacion_boton" type="button" aria-pressed="false">$100</button>
+            <input class="donacion_input" type="text" inputmode="numeric" placeholder="Otro monto" aria-label="Escribe otro monto">
+            <button class="donacion_boton-donar" type="button" disabled>Donar</button>
+            <p class="donacion_parra" role="status" aria-live="polite">Selecciona una cantidad o escribe otro monto para habilitar el botón Donar.</p>
         </div>
     </section>
     <section id="cosas_que_necesitamos" class="cosas">

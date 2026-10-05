@@ -24,9 +24,38 @@ function actualizarTiempo() {
 actualizarTiempo();
 setInterval(actualizarTiempo, 1000 * 60);
 
-/* esto impide letras en el input de donación */
+/* selecciona un monto y habilita la donación solo con una cantidad válida */
 const donacionInput = document.querySelector(".donacion_input");
+const donacionOpciones = document.querySelectorAll(".donacion_boton");
+const donacionBoton = document.querySelector(".donacion_boton-donar");
+const donacionEstado = document.querySelector(".donacion_parra");
+
+donacionOpciones.forEach((opcion) => {
+    opcion.addEventListener("click", () => {
+        donacionOpciones.forEach((otraOpcion) => {
+            otraOpcion.classList.remove("is-selected");
+            otraOpcion.setAttribute("aria-pressed", "false");
+        });
+
+        opcion.classList.add("is-selected");
+        opcion.setAttribute("aria-pressed", "true");
+        donacionInput.value = "";
+        donacionBoton.disabled = false;
+        donacionEstado.textContent = `Seleccionaste ${opcion.textContent.trim()}.`;
+    });
+});
 
 donacionInput.addEventListener("input", () => {
     donacionInput.value = donacionInput.value.replace(/\D/g, "");
+
+    donacionOpciones.forEach((opcion) => {
+        opcion.classList.remove("is-selected");
+        opcion.setAttribute("aria-pressed", "false");
+    });
+
+    const montoValido = Number(donacionInput.value) > 0;
+    donacionBoton.disabled = !montoValido;
+    donacionEstado.textContent = montoValido
+        ? "Monto personalizado seleccionado."
+        : "Selecciona una cantidad o escribe un monto mayor que cero.";
 });

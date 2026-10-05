@@ -360,15 +360,28 @@ header{
     background-color: var(--naranja2);
     color: var(--base);
 }
+.donacion_boton.is-selected,
+.donacion_boton.is-selected:hover {
+    background-color: var(--naranja2);
+    color: var(--base);
+    border: 2px solid var(--negro);
+}
 .donacion_boton-donar{
     font-family: var(--ballo);
     font-weight: 500;
     font-size: 22px;
     color: var(--base);
 }
-.donacion_boton-donar:hover{
+.donacion_boton-donar:not(:disabled):hover{
     transform: scale(105%);
     transition: all .1s ease-in-out;
+}
+.donacion_boton-donar:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.donacion_parra{
+    font-size: 1.2rem;
 }
 /*cosas**************************************************************/
 .cosas{
