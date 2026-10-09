@@ -383,6 +383,49 @@ header{
 .donacion_parra{
     font-size: 1.2rem;
 }
+.donacion_modal {
+    width: min(90vw, 32rem);
+    padding: 2rem;
+    border: 0;
+    border-radius: 1.25rem;
+    color: var(--negro);
+    font-family: var(--ballo);
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgba(46, 37, 37, 0.25);
+}
+.donacion_modal::backdrop {
+    background: rgba(46, 37, 37, 0.6);
+}
+.donacion_modal h2 {
+    margin-top: 0.5rem;
+    color: var(--rojo);
+}
+.donacion_modal-numero {
+    font-size: 1.5rem;
+    color: var(--rojo);
+}
+.donacion_modal-cerrar {
+    display: block;
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+    color: var(--gris);
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+.donacion_modal-whatsapp {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem;
+    background: #25d366;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+.donacion_modal-whatsapp:hover {
+    background: #1eaa52;
+}
 /*cosas**************************************************************/
 .cosas{
    display: grid;

@@ -29,6 +29,39 @@ const donacionInput = document.querySelector(".donacion_input");
 const donacionOpciones = document.querySelectorAll(".donacion_boton");
 const donacionBoton = document.querySelector(".donacion_boton-donar");
 const donacionEstado = document.querySelector(".donacion_parra");
+const donacionModal = document.querySelector(".donacion_modal");
+const donacionModalCerrar = document.querySelector(".donacion_modal-cerrar");
+const donacionModalMonto = document.querySelector("#donacion_modal_monto");
+const donacionModalSinpe = document.querySelector("#donacion_modal_sinpe");
+const donacionModalWhatsapp = document.querySelector("#donacion_modal_whatsapp");
+
+function obtenerMontoSeleccionado() {
+    const opcionSeleccionada = document.querySelector(".donacion_boton.is-selected");
+
+    if (opcionSeleccionada) {
+        return opcionSeleccionada.textContent.trim();
+    }
+
+    return `₡${Number(donacionInput.value).toLocaleString("es-CR")}`;
+}
+
+donacionBoton.addEventListener("click", () => {
+    if (donacionBoton.disabled) {
+        return;
+    }
+
+    const monto = obtenerMontoSeleccionado();
+    const numeroWhatsapp = donacionModalSinpe.dataset.phone;
+    const mensaje = `Hola, realicé una donación de ${monto} por SINPE. Adjunto el comprobante.`;
+
+    donacionModalMonto.textContent = monto;
+    donacionModalWhatsapp.href = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensaje)}`;
+    donacionModal.showModal();
+});
+
+donacionModalCerrar.addEventListener("click", () => {
+    donacionModal.close();
+});
 
 donacionOpciones.forEach((opcion) => {
     opcion.addEventListener("click", () => {

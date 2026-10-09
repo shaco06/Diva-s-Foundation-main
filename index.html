@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALDIVAS FOUNDATION</title>
+    <title>ALDIVA FOUNDATION (DVF)</title>
     <link rel="icon" type="image/png" href="img/ALDIVAS FOUNDATION_logo.png">
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <header class="header">
             <a class="header_logo"href="index.html">
                 <img class="header_logo-img" src="img/ALDIVAS FOUNDATION_logo.png" alt="Logo de la fundación">
-                <h3 class=" header_logo-text">ALDIVAS FOUNDATION</h3>
+                <h3 class=" header_logo-text">ALDIVA FOUNDATION (DVF)</h3>
             </a>
         <div class="header_menu">
             <a class="menu_donar" href="#donacion">Donar</a>
@@ -85,6 +85,14 @@
             <p class="donacion_parra" role="status" aria-live="polite">Selecciona una cantidad o escribe otro monto para habilitar el botón Donar.</p>
         </div>
     </section>
+    <dialog class="donacion_modal" aria-labelledby="donacion_modal_titulo" aria-describedby="donacion_modal_instrucciones">
+        <button class="donacion_modal-cerrar" type="button" aria-label="Cerrar ventana">&times;</button>
+        <h2 id="donacion_modal_titulo">¡Gracias por apoyar!</h2>
+        <p id="donacion_modal_instrucciones">Para completar tu donación de <strong id="donacion_modal_monto"></strong>, realiza un SINPE Móvil al siguiente número:</p>
+        <p class="donacion_modal-numero"><strong id="donacion_modal_sinpe" data-phone="50683024260">+506 8302-4260</strong></p>
+        <p>Después, envíanos el comprobante por WhatsApp para confirmar tu donación.</p>
+        <a class="donacion_modal-whatsapp" id="donacion_modal_whatsapp" href="#" target="_blank" rel="noopener noreferrer">Enviar comprobante por WhatsApp</a>
+    </dialog>
     <section id="cosas_que_necesitamos" class="cosas">
         <div class="cosas_encabezado">
             <h1 class="cosas_titulo">Tu donación se convierte en cosas reales</h1>
@@ -219,7 +227,7 @@
     <footer id="footer" class="footer_container">
         <div class="footer_izquierda">
             <img class="footer_img" src="img/ALDIVAS FOUNDATION_logo.png" alt="footer_logo">
-            <h4 class="footer_titulo">ALDIVAS FOUNDATION</h4>
+            <h4 class="footer_titulo">ALDIVA FOUNDATION (DVF)</h4>
         </div>
         <p class="footer_text">Hecho con cariño para las fiestas navideñas · </p>
     </footer>
